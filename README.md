@@ -1,3 +1,4 @@
+![alt text](/images/image.png) 
 # FNB App Academy
 
 Welcome to my repository for the **FNB App Academy**! This repo documents my journey as I progress through the 9-week training program focused on app development, design thinking, and real-world software engineering principles.
@@ -18,6 +19,7 @@ This repository contains:
 ```bash
 fnb-app-academy/
 ├── index.html
+├── images/
 └── README.md
 ```
 
