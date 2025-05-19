@@ -9,9 +9,21 @@ p {
 }
 
 ul {
-  list-style-type: circle;
+  list-style-image: url("images/pointer-icon.png");
 }
 
 ol {
   list-style-type: upper-roman;
+}
+
+a {
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  background-color: aquamarine;
+  padding: 5px;
+}
+
+a:hover {
+  background-color: aqua;
+  color: #ffffff;
 }
