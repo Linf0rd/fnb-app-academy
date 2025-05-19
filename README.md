@@ -25,6 +25,10 @@ fnb-app-academy/
 │   ├── images/
 │   └── README.md
 ├── week-2/
+│   ├── compukids-web/
+│   ├── avengers/
+│   └── README.md
+├── week-3/
 └── README.md
 ```
 
