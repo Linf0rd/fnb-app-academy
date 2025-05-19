@@ -1,4 +1,4 @@
-![alt text](/images/image.png) 
+![fnb-app-of-the-year](week-1/images/image.png) 
 # FNB App Academy
 
 Welcome to my repository for the **FNB App Academy**! This repo documents my journey as I progress through the 9-week training program focused on app development, design thinking, and real-world software engineering principles.
