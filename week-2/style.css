@@ -3,7 +3,7 @@ h1 {
   font-family: sans-serif;
 }
 
-p {
+p.index {
   color: coral;
   font-family: fantasy;
 }
@@ -16,14 +16,14 @@ ol {
   list-style-type: upper-roman;
 }
 
-a {
+#menu-bar a {
   font-family: Helvetica, sans-serif;
   text-decoration: none;
   background-color: aquamarine;
   padding: 5px;
 }
 
-a:hover {
+#menu-bar a:hover {
   background-color: aqua;
   color: #ffffff;
 }
