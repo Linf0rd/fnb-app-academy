@@ -18,10 +18,13 @@ This repository contains:
 
 ```bash
 fnb-app-academy/
-├── index.html
-├── about.html
-├── boat.html
-├── images/
+├── week-1/
+│   ├── index.html
+│   ├── about.html
+│   ├── boat.html
+│   ├── images/
+│   └── README.md
+├── week-2/
 └── README.md
 ```
 
