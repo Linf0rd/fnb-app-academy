@@ -75,6 +75,7 @@ body {
   color: white;
   text-align: center;
   text-decoration: none;
+  padding-top: 12px;
 }
 
 /*========== MAIN ==========*/
@@ -83,6 +84,8 @@ body {
   margin-top: 119px;
   background: url("images/map-blur.png");
   background-repeat: repeat-y;
+  background-position: cover;
+  background-size: cover;
 }
 
 #content {
@@ -127,4 +130,23 @@ a.info-box {
   float: right;
   margin-top: 25px;
   height: 40px;
+}
+
+/*========== INFO BOX FULL ==========*/
+
+#info-box-full {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+  padding: 10px;
+}
+
+#info-box-full img {
+  width: 100%;
+}
+
+#info-box-full h3 {
+  text-align: center;
 }
