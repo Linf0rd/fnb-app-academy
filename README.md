@@ -29,6 +29,7 @@ fnb-app-academy/
 │   ├── avengers/
 │   └── README.md
 ├── week-3/
+│   ├── pine-city-zoo/
 └── README.md
 ```
 
