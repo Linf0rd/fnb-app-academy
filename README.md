@@ -25,8 +25,8 @@ fnb-app-academy/
 │   ├── images/
 │   └── README.md
 ├── week-2/
-│   ├── compukids-web/
 │   ├── avengers/
+│   ├── compukids-web/
 │   └── README.md
 ├── week-3/
 │   ├── pine-city-zoo/
