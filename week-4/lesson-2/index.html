@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    
+  </head>
+  <body>
+    <h1 id="heading1"></h1>
+    <p id="paragraph1"></p>
+  </body>
+  <script>
+    var text1;
+    var text2;
+    var text3;
+    text1 = "Hello Everyone";
+
+    /*Example 1*/
+    document.getElementById("heading1").innerHTML = text1;
+    document.getElementById("paragraph1").innerHTML = "Javascript " + "is fun";
+
+    /*Example 2*/
+    text1 = "Hello Everyone on planet Earth";
+    document.getElementById("heading1").innerHTML = text1;
+    document.getElementById("paragraph1").innerHTML = "Javascript " + "is fun";
+
+    /*Example 3*/
+    text2 = "I love learning JS";
+    document.getElementById("heading1").innerHTML = text1;
+    document.getElementById("paragraph1").innerHTML = text2;
+
+    /*Example 4*/
+    document.getElementById("heading1").innerHTML = "text1";
+    document.getElementById("paragraph1").innerHTML = text2;
+
+    /*Example 5*/
+    text3 = " JS is awesome";
+    document.getElementById("heading1").innerHTML = text1;
+    document.getElementById("paragraph1").innerHTML = text2 + text3;
+  </script>
+</html>
