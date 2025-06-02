@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p id="outputText"></p>
+
+    <script>
+      /* Example 1 */
+      var text1 = "4";
+      var text2 = "5";
+      document.getElementById("outputText").innerHTML = text1 + text2;
+      /*  Example 2 */
+      text1 = "hello";
+      text2 = "5";
+      document.getElementById("outputText").innerHTML = text1 + text2;
+      /*  Example 3 */
+      text1 = "10";
+      text2 = "5";
+      document.getElementById("outputText").innerHTML = text1 - text2;
+      /* Example 4 */
+      text1 = "10";
+      text2 = "2";
+      document.getElementById("outputText").innerHTML = text1 * text2; // The multiplication function works only if text can be converted to a number
+      /* Example 5 */
+      text1 = "10";
+      text2 = "2";
+      document.getElementById("outputText").innerHTML = text1 / text2; // The division function works only if text can be converted to a number.
+      /* Example 6 */
+      text1 = "ten";
+      text2 = "2";
+      document.getElementById("outputText").innerHTML = text1 - text2; // The subtraction function works only if text can be converted to a number. In this case, it will return NaN (Not a Number).
+      /* Example 7 */
+      text1 = "10";
+      text2 = "2";
+      document.getElementById("outputText").innerHTML = text1 % text2; // The modulus function works only if text can be converted to a number.
+    </script>
+  </body>
+</html>
