@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <p>Welcome. Please log in.</p>
+
+    <form>
+      <label for="usernameInput">Username:</label
+      ><input type="text" id="usernameInput" /><br />
+      <label for="passwordInput">Password</label
+      ><input type="password" id="passwordInput" />
+      <p id="message"></p>
+      <!-- ISSUE: The verifyUser() function was not being called when the "Log in" link was clicked -->
+      <!-- FIX: Added an onclick attribute to the link to call the verifyUser() function -->
+      <a href="#" onclick="verifyUser()">Log in</a>
+    </form>
+
+    <script>
+      function verifyUser() {
+        var username = document.getElementById("usernameInput").value;
+        var password = document.getElementById("passwordInput").value;
+        checkUserCreds(username, password);
+      }
+
+      function checkUserCreds(username, password) {
+        var systemUsername = "Bond";
+        var systemPassword = "007";
+        if (username == systemUsername && password == systemPassword) {
+          document.getElementById("message").innerHTML =
+            "Correct. Loggin you in…";
+        } else {
+          document.getElementById("message").innerHTML =
+            "Username or password are incorrect!";
+        }
+      }
+    </script>
+  </body>
+</html>
