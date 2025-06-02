@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p id="outputText"></p>
+  </body>
+</html>
+<script>
+  var text1 = "ten";
+  var text2 = "2";
+
+  var num1 = stringToNumber(text1);
+  var num2 = stringToNumber(text2);
+
+  if (isNaN(num1) || isNaN(num2)) {
+    document.getElementById("outputText").innerHTML =
+      "You have not entered a valid number. Please try again.";
+  } else {
+    document.getElementById("outputText").innerHTML = num1 + num2;
+  }
+
+  var text1 = "10";
+  var text2 = "2";
+
+  var num1 = stringToNumber(text1);
+  var num2 = stringToNumber(text2);
+
+  if (isNaN(num1) || isNaN(num2)) {
+    document.getElementById("outputText").innerHTML =
+      "You have not entered a valid number. Please try again.";
+  } else {
+    document.getElementById("outputText").innerHTML = num1 + num2;
+  }
+
+  var text1 = "10";
+  var text2 = "2";
+
+  var num1 = stringToNumber(text1);
+  var num2 = stringToNumber(text2);
+
+  if (isNaN(num1) || isNaN(num2)) {
+    document.getElementById("outputText").innerHTML =
+      "You have not entered a valid number. Please try again.";
+  } else {
+    document.getElementById("outputText").innerHTML = num1 - num2;
+  }
+
+  var text1 = "10";
+  var text2 = "2";
+
+  var num1 = stringToNumber(text1);
+  var num2 = stringToNumber(text2);
+
+  if (isNaN(num1) || isNaN(num2)) {
+    document.getElementById("outputText").innerHTML =
+      "You have not entered a valid number. Please try again.";
+  } else {
+    document.getElementById("outputText").innerHTML = num1 * num2;
+  }
+
+  var text1 = "10";
+  var text2 = "2";
+
+  var num1 = stringToNumber(text1);
+  var num2 = stringToNumber(text2);
+
+  if (isNaN(num1) || isNaN(num2)) {
+    document.getElementById("outputText").innerHTML =
+      "You have not entered a valid number. Please try again.";
+  } else {
+    document.getElementById("outputText").innerHTML = num1 / num2;
+  }
+
+  var text1 = "10";
+  var text2 = "2";
+
+  var num1 = stringToNumber(text1);
+  var num2 = stringToNumber(text2);
+
+  if (isNaN(num1) || isNaN(num2)) {
+    document.getElementById("outputText").innerHTML =
+      "You have not entered a valid number. Please try again.";
+  } else {
+    document.getElementById("outputText").innerHTML = num1 % num2;
+  }
+
+  function stringToNumber(text) {
+    return parseInt(text);
+  }
+</script>
