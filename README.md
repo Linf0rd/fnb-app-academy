@@ -30,6 +30,9 @@ fnb-app-academy/
 │   └── README.md
 ├── week-3/
 │   ├── pine-city-zoo/
+│   └── README.md
+├── week-4/
+│   └── README.md
 └── README.md
 ```
 
