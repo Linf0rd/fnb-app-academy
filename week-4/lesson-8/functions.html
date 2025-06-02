@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    
+  </head>
+  <body>
+    <h1 onclick="changeText()" id="heading">JavaScript</h1>
+    <p id="addition"></p>
+  </body>
+  <script>
+    var element = document.getElementById("heading");
+
+    document.getElementById("addition").innerHTML = addNumbers(10, 20);
+
+    function changeText() {
+      if (this.element.innerHTML == "JavaScript") {
+        this.element.innerHTML = "Is awesome";
+      } else {
+        this.element.innerHTML = "JavaScript";
+      }
+    }
+
+    function addNumbers(num1, num2) {
+      return num1 + num2;
+    }
+  </script>
+</html>
