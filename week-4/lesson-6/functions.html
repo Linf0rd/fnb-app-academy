@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1 id="heading" onclick="changeText()">JavaScript</h1>
+
+    <script>
+      function changeText() {
+        if (document.getElementById("heading").innerHTML === "JavaScript") {
+          document.getElementById("heading").innerHTML = "Is awesome";
+        } else {
+          document.getElementById("heading").innerHTML = "JavaScript";
+        }
+      }
+    </script>
+  </body>
+</html>
