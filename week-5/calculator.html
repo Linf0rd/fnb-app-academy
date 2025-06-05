@@ -11,9 +11,9 @@
         </td>
       </tr>
       <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
+        <td onclick="digitBtnPressed(7)">7</td>
+        <td onclick="digitBtnPressed(8)">8</td>
+        <td onclick="digitBtnPressed(9)">9</td>
         <td>/</td>
       </tr>
       <tr>
@@ -38,7 +38,10 @@
       </tr>
     </table>
     <script>
-      
+      function digitBtnPressed(button) {
+        var currentValue = document.getElementById("inputBox").value;
+        document.getElementById("inputBox").value += button;
+      }
     </script>
   </body>
 </html>
