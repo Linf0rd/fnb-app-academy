@@ -35,7 +35,7 @@
         
       </tr>
       <tr>
-        <td colspan="4">=</td>
+        <td colspan="4" onclick="equalBtnPressed()">=</td>
       </tr>
     </table>
     <script>
@@ -61,6 +61,35 @@
       function operatorBtnPressed(operator) {
         currentOperator = operator;
         value1 = parseFloat(document.getElementById("inputBox").value);
+        newLine = true;
+      }
+
+      function equalBtnPressed() {
+        var value2 = parseFloat(document.getElementById("inputBox").value);
+        var result;
+
+        switch (currentOperator) {
+          case '+':
+            result = value1 + value2;
+            break;
+          case '-':
+            result = value1 - value2;
+            break;
+          case '*':
+            result = value1 * value2;
+            break;
+          case '/':
+            if (value2 === 0) {
+              alert("Cannot divide by zero");
+              return;
+            }
+            result = value1 / value2;
+            break;
+          default:
+            return;
+        }
+
+        document.getElementById("inputBox").value = result;
         newLine = true;
       }
     </script>
