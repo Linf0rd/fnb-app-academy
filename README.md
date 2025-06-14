@@ -30,10 +30,42 @@ fnb-app-academy/
 │   └── README.md
 ├── week-3/
 │   ├── pine-city-zoo/
+│       ├── animals/
+│       ├── images/
+│       ├── places/
+│       ├── animals.html
+│       ├── feedback.html
+│       ├── index.html
+│       ├── message-received.html
+│       ├── places.html
+│       ├── style.css
+│       └── weather.html
 │   └── README.md
 ├── week-4/
+│   ├── lesson-1/
+│   ├── lesson-2/
+│   ├── lesson-3/
+│   ├── lesson-4/
+│   ├── lesson-5/
+│   ├── lesson-6/
+│   ├── lesson-7/
+│   ├── lesson-8/
+│   ├── lesson-9/
+│   ├── lesson-10/
+│   ├── lesson-11/
+│   ├── lesson-12/
+│   ├── lesson-13/
+│   ├── lesson-14/
+│   ├── lesson-15/
 │   └── README.md
 ├── week-5/
+│   ├── calculator.html
+│   ├── style.css
+│   └── README.md
+├── week-6/
+│   ├── config.js
+│   ├── enter-api-key.html
+│   ├── index.html
 │   └── README.md
 └── README.md
 ```

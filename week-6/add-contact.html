@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title> </title>
+  </head>
+  <body>
+    <br />
+    <form id="editForm">
+      <label for="firstname">First name</label><br />
+      <input type="text" name="firstname" id="firstname" /><br />
+      <label for="lastname">Last name</label><br />
+      <input type="text" name="lastname" id="lastname" /><br />
+      <label for="mobile">Mobile</label><br />
+      <input type="text" name="mobile" id="mobile" /><br />
+      <label for="email">Email</label><br />
+      <input type="text" name="email" id="email" /><br />
+      <label for="avatar">Select a file</label><br />
+      <input type="file" name="avatar" id="avatar" /><br />
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    <br />
+    <button id="homeLink" type="button">Home</button>
+
+    <script src="config.js"></script>
+    <script>
+      function submitForm(e) {
+        e.preventDefault();
+
+        const form = new FormData(document.querySelector("#editForm"));
+        form.append("apiKey", apiKey);
+      }
+    </script>
+  </body>
+</html>
