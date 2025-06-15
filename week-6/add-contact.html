@@ -1,64 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Add Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form id="submitForm">
-      <label for="firstname">First name</label><br />
-      <input type="text" name="firstname" id="firstname" /><br />
-      <label for="lastname">Last name</label><br />
-      <input type="text" name="lastname" id="lastname" /><br />
-      <label for="mobile">Mobile</label><br />
-      <input type="text" name="mobile" id="mobile" /><br />
-      <label for="email">Email</label><br />
-      <input type="text" name="email" id="email" /><br />
-      <label for="avatar">Select a file</label><br />
-      <input type="file" name="avatar" id="avatar" /><br />
-      <button type="submit" id="submit">Submit</button>
-    </form>
-    <br />
-    <button id="homeLink" type="button">Home</button>
+    <div class="addContact">
+      <form id="editForm">
+        <label for="firstname">First name</label>
+        <input type="text" name="firstname" id="firstname" /> <br />
 
+        <label for="lastname">Last name</label>
+        <input type="text" name="lastname" id="lastname" /><br />
+
+        <label for="mobile">Mobile</label>
+        <input type="text" name="mobile" id="mobile" /><br />
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" /><br /><br />
+
+        <label for="avatar">Select a file</label>
+        <input type="file" name="avatar" id="avatar" />
+
+        <button id="homeLink" type="button">&LeftArrow; Home</button>
+        <button type="submit" id="submitForm">Submit</button>
+      </form>
+    </div>
     <script src="config.js"></script>
-    <script>
-      document
-        .getElementById("submitForm")
-        .addEventListener("submit", submitForm);
-      document.getElementById("homeLink").addEventListener("click", homeLink);
-
-      function submitForm(e) {
-        e.preventDefault();
-
-        const form = new FormData(document.querySelector("#submitForm"));
-        form.append("apiKey", apiKey);
-
-        fetch(rootPath + "controller/add-contact/", {
-          method: "POST",
-          headers: {
-            Accept: "application/json, *.*",
-          },
-          body: form,
-        })
-          .then((response) => response.text())
-          .then((data) => {
-            if (data == "1") {
-              alert("Contact added successfully!");
-              homeLink();
-            } else {
-              alert("Error adding contact: " + data);
-              homeLink();
-            }
-          })
-          .catch((error) => {
-            alert("Fetch failed: " + error.message);
-          });
-      }
-
-      function homeLink() {
-        window.open("index.html", "_self");
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

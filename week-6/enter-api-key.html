@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>API Key</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>Please enter a valid API key.</div>
-    <form>
-      <input type="email" id="apiKey" name="apiKey" />
-      <button id="submitApiKey">Submit</button>
-    </form>
+    <div class="wrapper">
+      <h3>Welcome to My Contact Book</h3>
+      <p>Please enter a valid API key</p>
 
+      <form>
+        <input
+          type="email"
+          id="apiKey"
+          name="apiKey"
+          placeholder="Enter email given below"
+        />
+        <br />
+        <button id="submitApiKey">Submit</button>
+      </form>
+
+      <p class="NB">
+        To use this app enter this email in the text field:
+        <span>linfordsnagger@gmail.com</span>
+      </p>
+    </div>
     <script>
       let rootPath = "https://mysite.itvarsity.org/api/ContactBook/";
       document
@@ -27,11 +41,11 @@
             return response.text();
           })
           .then(function (data) {
-            if (data == "1") {
+            if (data === "1") {
               localStorage.setItem("apiKey", apiKey);
               window.open("index.html", "_self");
             } else {
-              alert(data + "Invalid API key entered!");
+              alert(data + "Invalid API key entered");
             }
           });
       }
