@@ -2,11 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title> </title>
+    <title>Add Contact</title>
   </head>
   <body>
-    <br />
-    <form id="editForm">
+    <form id="submitForm">
       <label for="firstname">First name</label><br />
       <input type="text" name="firstname" id="firstname" /><br />
       <label for="lastname">Last name</label><br />
@@ -24,11 +23,41 @@
 
     <script src="config.js"></script>
     <script>
+      document
+        .getElementById("submitForm")
+        .addEventListener("submit", submitForm);
+      document.getElementById("homeLink").addEventListener("click", homeLink);
+
       function submitForm(e) {
         e.preventDefault();
 
-        const form = new FormData(document.querySelector("#editForm"));
+        const form = new FormData(document.querySelector("#submitForm"));
         form.append("apiKey", apiKey);
+
+        fetch(rootPath + "controller/add-contact/", {
+          method: "POST",
+          headers: {
+            Accept: "application/json, *.*",
+          },
+          body: form,
+        })
+          .then((response) => response.text())
+          .then((data) => {
+            if (data == "1") {
+              alert("Contact added successfully!");
+              homeLink();
+            } else {
+              alert("Error adding contact: " + data);
+              homeLink();
+            }
+          })
+          .catch((error) => {
+            alert("Fetch failed: " + error.message);
+          });
+      }
+
+      function homeLink() {
+        window.open("index.html", "_self");
       }
     </script>
   </body>
