@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.contact-book {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#table {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+#refresh {
+  background-color: #03A9F4;
+}
+
+#refresh:hover {
+  background-color: #039BE5;
+}
+
+#addContact {
+  background-color: #FFC107;
+}
+
+#addContact:hover {
+  background-color: #FFB300;
+}
+
+.note {
+  font-size: 14px;
+  color: #666;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.editContact {
+  margin-top: 20px;
+}
+
+.editContact form {
+  margin-top: 20px;
+}
+
+.editContact label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.editContact input[type="text"] {
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.editContact input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.editContact button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editContact button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
