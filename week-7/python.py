@@ -1,4 +1,4 @@
-# Numeric Data
+# Lesson 4: Numeric Data
 
 # Example 1 - Integer & type of Integer
 

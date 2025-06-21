@@ -1,4 +1,4 @@
-# Strings
+# Lesson 2: Strings
 
 # Example 1 - Single-quoted string
 message = 'Hello, World'

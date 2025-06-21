@@ -1,4 +1,4 @@
-# Advanced concepts - Strings
+# Lesson 3: Advanced concepts - Strings
 
 # Example 1 - Accessing characters in a string
 

@@ -1,4 +1,4 @@
-# Variables
+# Lesson 5: Variables
 
 my_variable = 10
 total_count = 0
