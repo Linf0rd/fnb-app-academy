@@ -1,4 +1,4 @@
-# Lesson 8: Control Statements
+# Lesson 8: Control Statements (Conditionals)
 
 # Example 1 - If Statement
 
