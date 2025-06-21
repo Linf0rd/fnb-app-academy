@@ -67,6 +67,9 @@ fnb-app-academy/
 │   ├── enter-api-key.html
 │   ├── index.html
 │   └── README.md
+├── week-7/
+│   ├── strings.py
+│   └── README.md
 └── README.md
 ```
 
