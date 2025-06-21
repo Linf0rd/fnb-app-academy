@@ -63,12 +63,25 @@ fnb-app-academy/
 │   ├── style.css
 │   └── README.md
 ├── week-6/
+│   ├── add-contact.html
 │   ├── config.js
+│   ├── edit-contact.html
 │   ├── enter-api-key.html
 │   ├── index.html
+│   ├── script.js
+│   ├── style.css
 │   └── README.md
 ├── week-7/
 │   ├── strings.py
+│   ├── strings1.py
+│   ├── python.py
+│   ├── python1.py
+│   ├── python2.py
+│   ├── python3.py
+│   ├── python4.py
+│   ├── python5.py
+│   ├── python6.py
+│   ├── python7.py
 │   └── README.md
 └── README.md
 ```
