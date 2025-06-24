@@ -83,6 +83,8 @@ fnb-app-academy/
 │   ├── python6.py
 │   ├── python7.py
 │   └── README.md
+├── week-8/
+│   ├── lists.py
 └── README.md
 ```
 
