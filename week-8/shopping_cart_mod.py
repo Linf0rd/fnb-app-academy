@@ -37,12 +37,12 @@ while True:
 now = datetime.now()
 date_str = now.strftime("%Y-%m-%d %H:%M")
 file_date_str = now.strftime("%Y-%m-%d_%H-%M")
-filename = f"burger_joint_receipt_{file_date_str}.txt"
+filename = f"cash_n_carry_receipt_{file_date_str}.txt"
 total = sum(prices)
 
 # Sanitize filename to prevent path traversal and invalid characters
 safe_file_date_str = re.sub(r'[^A-Za-z0-9_\-]', '_', file_date_str)
-filename = f"burger_joint_receipt_{safe_file_date_str}.txt"
+filename = f"cash_n_carry_receipt_{safe_file_date_str}.txt"
 
 # Build receipt
 receipt = []
