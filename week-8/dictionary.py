@@ -1,4 +1,4 @@
-# Lesson 5: Dictionaries in Python
+# Lesson 5: Dictionaries in Python part 1
 
 my_dict = {'apple': 3, 'banana': 5, 'orange': 2}
 

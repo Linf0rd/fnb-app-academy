@@ -84,7 +84,15 @@ fnb-app-academy/
 │   ├── python7.py
 │   └── README.md
 ├── week-8/
+│   ├── dictionary.py
+│   ├── dictionary1.py
 │   ├── lists.py
+│   ├── lists1.py
+│   ├── sets.py
+│   ├── shopping_cart.py
+│   ├── shopping_cart_mod.py
+│   ├── tuples.py
+│   └── README.md
 └── README.md
 ```
 
