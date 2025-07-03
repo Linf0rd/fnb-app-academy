@@ -1,4 +1,4 @@
-# Lesson: 1 - Introduction to Functions
+# Lesson 1 - Introduction to Functions
 
 def greet(name):
     """Function to greet a user by name."""
